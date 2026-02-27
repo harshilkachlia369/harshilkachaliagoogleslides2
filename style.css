@@ -1,5 +1,3 @@
-/* Minimalist Professional Portfolio CSS */
-
 /* Reset */
 * {
     margin: 0;
@@ -7,66 +5,67 @@
     box-sizing: border-box;
 }
 
-/* Base layout */
+/* Base */
 body {
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background-color: #f8fafc;
-    color: #0f172a;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    line-height: 1.5;
 }
 
-/* Center content */
+/* Center layout */
 header, section, footer {
-    max-width: 800px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* Header */
 header {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 header h1 {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 header p {
+    font-size: 19px;
+    color: #6e6e73;
     margin-top: 8px;
-    font-size: 16px;
-    color: #64748b;
 }
 
 /* Section */
 section {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 section h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #334155;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-/* Slide container */
+/* Slide frame */
 .slide-container {
     width: 100%;
-    height: 480px;
-    background-color: #ffffff;
-    border-radius: 8px;
+    height: 500px;
+    border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #e2e8f0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f5f5f7;
+    border: 1px solid #e5e5e7;
+    transition: all 0.25s ease;
 }
 
-/* Subtle hover effect */
+/* Subtle Apple hover */
 .slide-container:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transform: scale(1.01);
 }
 
 /* iframe */
@@ -78,22 +77,26 @@ iframe {
 
 /* Footer */
 footer {
-    margin-top: 60px;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 40px;
     font-size: 14px;
-    color: #94a3b8;
+    color: #86868b;
 }
 
-/* Responsive design */
+/* Mobile optimization */
 @media (max-width: 600px) {
 
     header h1 {
-        font-size: 26px;
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
     }
 
     .slide-container {
-        height: 300px;
+        height: 320px;
+        border-radius: 12px;
     }
 
 }

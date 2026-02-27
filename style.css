@@ -1,0 +1,99 @@
+/* Minimalist Professional Portfolio CSS */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base layout */
+body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* Center content */
+header, section, footer {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header */
+header {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* Section */
+section {
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #334155;
+}
+
+/* Slide container */
+.slide-container {
+    width: 100%;
+    height: 480px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtle hover effect */
+.slide-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .slide-container {
+        height: 300px;
+    }
+
+}
